@@ -1,0 +1,1 @@
+Binaries for GLFW: https://www.glfw.org/

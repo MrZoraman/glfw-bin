@@ -1,11 +1,5 @@
 $ErrorActionPreference = 'Stop'
 
-# Make sure CMAKE is on the path
-if (!(Get-Command 'cmake' -errorAction SilentlyContinue)) {
-    Write-Host "Could not find cmake. Is it on your PATH?"
-    return
-}
-
 if ($IsWindows) {
     $downloadUrl = "https://github.com/glfw/glfw/releases/download/3.3.8/glfw-3.3.8.bin.WIN64.zip"
     $cacheFileName = Split-Path $downloadUrl -leaf
